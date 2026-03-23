@@ -41,9 +41,9 @@ export default function ImageGenerator() {
           <span>{wordsCount} words</span>
           <span>{charsCount} characters</span>
         </div>
-        
+
         {error && <div className="error-message">{error}</div>}
-        
+
         <div className="controls">
           <button onClick={handleGenerate} disabled={loading}>
             {loading ? 'Generating...' : 'Generate Image'}
