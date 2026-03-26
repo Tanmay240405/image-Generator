@@ -9,7 +9,7 @@ export default function ImageGenerator() {
 
   const handleGenerate = async () => {
     if (!prompt.trim()) {
-      setError('Please enter a description for the image.');
+      setError('Please enter a description for the image. Detailed prompts would be better');
       return;
     }
     setError(null);
@@ -33,7 +33,7 @@ export default function ImageGenerator() {
       <div className="panel left-panel">
         <div className="panel-header">INPUT PROMPT</div>
         <textarea
-          placeholder="Type or paste your prompt here"
+          placeholder="Type/ paste your prompt here"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         />
